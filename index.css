@@ -1,0 +1,373 @@
+@media only screen and (max-width: 550px) {
+    .first {
+       padding-top: 35%;
+       padding-bottom: 30%;
+    }
+ }
+ 
+ @media only screen and (max-width: 950px) {
+    .first {
+       padding-left: 0;
+       padding-right: 0;
+    }
+ }
+
+ @media only screen and (max-width: 450px) {
+    .second{
+        font-size: 150px;
+    }
+ }
+ 
+ @media only screen and (max-width: 950px) {
+    .second{
+       font-size: 14px;
+    }
+ }
+
+
+
+
+ 
+
+ @media only screen and (max-width: 850px) {
+    .third {
+        padding-left: 12px;
+        
+    }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+    .third {
+     padding-left: 0px;
+     
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 400px) {
+    .third {
+     padding-top: 30px;
+     
+    }
+ }
+
+
+
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .side111{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ }
+ 
+ .inside {
+   position: relative;
+   text-align: center;
+   color: white;
+   
+ }
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+/* 
+
+haiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
+
+
+
+
+
+
+
+
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 78%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(126, 124, 124, 0.459);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 50px;
+	height: 60px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+.box-area li:nth-child(7) {
+	left: 3%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 7.3s;
+}
+.box-area li:nth-child(8) {
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 7s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+
+
+/* css for loading before page fully loads */
+
+#loader {
+   border: 12px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 12px solid #444444;
+   width: 70px;
+   height: 70px;
+   animation: spin 1s linear infinite;
+}
+ 
+@keyframes spin {
+   100% {
+       transform: rotate(360deg);
+   }
+}
+ 
+.center333 {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+/* 
+-----------close------------ */
+
+/* 
+
+---------------div position changing while enlarging screen -------------- */
+.a{width: 50%; float: left; text-align: center;}
+.b{width: 50%; float: left; text-align: center;}
+ @media only screen and (max-width:768px){
+	 .a{width: 100%;}
+	 .b{width: 100%;}
+	 .container{display: flex; flex-direction: column;}
+	 .a{order: 2;}
+	 .b{order: 1;}
+ }
+/* 
+
+----------------------close------------------------------------------- */
+
+
+
+
+
+/* .darkmode--activated .darkmode {
+	color: white;
+  } */
+
+
+
+
+
+
+
+
+/* 
+
+---------------------------glitch--------------------------------- */
+
+
+/* 
+
+-----------------------moving cards----------------------------- */
+
+
+/* 
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 320px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 10s;
+}
+.card .content .btn button:hover{
+  transform: scale(3);
+}
+
+
+/* 
+
+--------------------------------close----------------------------------------- */ 
+
+
+
+.choose{
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  } 
+
+
+.whyus{
+  font-size: 26px;
+  color: rgb(19, 20, 20);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+.key1{
+  padding-right: 50px;
+}
+.key2{
+  padding-left: 60px;
+}
+.key3{
+  padding-right: 50px;
+}
+}

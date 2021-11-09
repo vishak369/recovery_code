@@ -1,0 +1,222 @@
+@media only screen and (max-width: 550px) {
+    .first {
+       padding-top: 35%;
+       padding-bottom: 30%;
+    }
+ }
+ 
+ @media only screen and (max-width: 950px) {
+    .first {
+       padding-left: 0;
+       padding-right: 0;
+    }
+ }
+
+ @media only screen and (max-width: 450px) {
+    .second{
+        font-size: 150px;
+    }
+ }
+ 
+ @media only screen and (max-width: 950px) {
+    .second{
+       font-size: 14px;
+    }
+ }
+
+
+
+
+ 
+
+ @media only screen and (max-width: 850px) {
+    .third {
+        padding-left: 12px;
+        
+    }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+    .third {
+     padding-left: 0px;
+     
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 400px) {
+    .third {
+     padding-top: 30px;
+     
+    }
+ }
+
+
+
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .side111{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ }
+ 
+ .inside {
+   position: relative;
+   text-align: center;
+   color: white;
+   
+ }
+ 
+
+
+
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+ 
+/* 
+
+haiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
+
+
+
+
+body{
+	overflow:hidden;
+	margin:0;
+
+		content:'';
+		background:#c4252a url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png);
+		background-blend-mode: multiply;
+		mix-blend-mode: multiply;
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		z-index: 10;
+	
+}
+canvas{
+	opacity:0;
+	transition:1s opacity cubic-bezier(.55,0,.1,1);
+
+		opacity:0.4;
+	
+	
+}
+
+.intro{
+	position: absolute;
+	padding:20px;
+	transform:translate(-50%, -50%);
+	left:50%;
+	top:50%;
+	text-align:center;
+	color:#fafafa;
+	z-index: 10;
+	width:100%;
+	max-width:700px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-shadow:0px 5px 20px black;
+	
+}.h1{
+		font-size:40px;
+		font-weight:300;
+		letter-spacing:2px;
+	}
+	p{
+		letter-spacing:1px;
+		line-height:24px;
+	}
