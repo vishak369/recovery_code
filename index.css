@@ -362,12 +362,15 @@ html,body{
 
 @media only screen and (max-width: 450px) {
 .key1{
-  padding-right: 50px;
+  /* padding-right: 50px; */
+  font-size: 18px;
 }
 .key2{
-  padding-left: 60px;
+  /* padding-left: 60px; */
+  font-size: 18px;
 }
 .key3{
-  padding-right: 50px;
+  /* padding-right: 50px; */
+  font-size: 18px;
 }
 }
