@@ -415,3 +415,19 @@ html,body{
   font-family: impact;
 }
 }
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+  .contact123 {
+    width: 104%;
+  
+
+
+  }
+  .services111{
+    padding-left: 80px;
+  }
+}
