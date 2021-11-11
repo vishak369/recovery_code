@@ -372,8 +372,8 @@ html,body{
   /* padding-right: 50px; */
   font-size: 18px;
   font-family: impact;
-  font-weight: 400;
-  color: rgb(87, 156, 93);
+  font-weight: 500;
+  color: rgb(69, 70, 69);
   
   
 }
@@ -381,15 +381,15 @@ html,body{
   /* padding-left: 60px; */
   font-size: 18px;
   font-family: impact;
-  font-weight: 400;
-  color: rgb(87, 156, 93);
+  font-weight: 500;
+  color: rgb(69, 70, 69);
 }
 .key3{
   /* padding-right: 50px; */
   font-size: 18px;
   font-family: impact;
-  font-weight: 400;
-  color: rgb(87, 156, 93);
+  font-weight: 500;
+  color: rgb(69, 70, 69);
 }
 }
 
@@ -397,20 +397,20 @@ html,body{
 @media only screen and (min-width: 900px) {
   .key1 {
      color: rgb(69, 70, 69);
-     font-weight: 450;
+     font-weight: 550;
      font-size: 32px;
      padding-top: 35px;
      font-family: impact;
   }
   .key2 {
     color: rgb(69, 70, 69);
-    font-weight: 450;
+    font-weight: 550;
     font-size: 32px;
     font-family: impact;
  }
  .key3 {
   color: rgb(69, 70, 69);
-  font-weight: 450;
+  font-weight: 550;
   font-size: 32px;
   font-family: impact;
 }
