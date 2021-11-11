@@ -370,14 +370,17 @@ html,body{
 @media only screen and (max-width: 450px) {
 .key1{
   /* padding-right: 50px; */
-  font-size: 18px;
+  font-size: 20px;
+  font-family: impact;
 }
 .key2{
   /* padding-left: 60px; */
-  font-size: 18px;
+  font-size: 20px;
+  font-family: impact;
 }
 .key3{
   /* padding-right: 50px; */
-  font-size: 18px;
+  font-size: 20px;
+  font-family: impact;
 }
 }
