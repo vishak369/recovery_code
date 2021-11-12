@@ -559,3 +559,17 @@ html,body{
     
   }
 }
+
+
+
+
+/* sliding padding */
+@media only screen and (min-width: 900px) {
+  .sliding111{
+    padding-left: 101px;
+
+    
+  }
+}
+
+
