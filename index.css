@@ -583,3 +583,28 @@ html,body{
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+
+
+
+
+
+  @media only screen and (max-width: 420px) {
+    .ballinmob{
+      /* padding-right: 50px; */
+     
+      
+
+      
+      
+    }
+
+    .balls{
+      height: 500px;
+    }
+    .ball_height{
+      padding-bottom: 700px;
+    }
+    
+    }
+
