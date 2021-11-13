@@ -557,3 +557,10 @@ html,body{
 } */
 
 
+@media only screen and (max-width: 420px) {
+  .hireus{
+    /* padding-right: 50px; */
+   height: 188px;
+  }
+  
+  }
