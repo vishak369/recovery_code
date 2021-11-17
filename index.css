@@ -756,11 +756,23 @@ servies heading position */
 
 
 
+    @media only screen and (max-width: 420px) {
+      .status33{
+        font-size: 20px;
+        text-align:center;
+        
+        
+      }
+      }
 
 
 
 
 
+
+
+
+  
 
     .hireus1{
       position: relative;
@@ -771,7 +783,7 @@ servies heading position */
 
     .hireus2 {
       position: absolute;
-      top: 60%;
+      top: 80%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -787,3 +799,23 @@ servies heading position */
       bottom: 180px;
       right: 90px;
     }
+
+    
+    .hireus5 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
