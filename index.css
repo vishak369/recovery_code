@@ -783,20 +783,20 @@ servies heading position */
 
     .hireus2 {
       position: absolute;
-      top: 80%;
+      top: 90%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
     .hireus3{
       position: absolute;
-      bottom: 180px;
-      left: 80px;
+      bottom: 140px;
+      left: 90px;
     }
 
     .hireus4 {
       position: absolute;
-      bottom: 180px;
+      bottom: 140px;
       right: 90px;
     }
 
