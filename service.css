@@ -1,0 +1,102 @@
+.servicepic {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 75px;
+  }
+
+  .top-left2 {
+    position: absolute;
+    top: 320px;
+    left: 79px;
+  }
+
+  .top-left3 {
+    position: absolute;
+    top: 400px;
+    left: 79px;
+  }
+
+
+
+  
+  @media only screen and (max-width: 420px) {
+    .topper1{
+      visibility: hidden;
+      display: none;
+      
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
+@media only screen and (min-width: 900px) {
+    .topper1{
+        font-weight: 700;
+        font-size: 85px;
+        text-align: left;
+      
+      
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+    .topper2{
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+
+        
+      
+      
+    }
+}
+
+  
+@media only screen and (min-width: 900px) {
+    .topper2{
+        visibility: hidden;
+        display: none;
+      
+    }
+}
+
+
+
+
+@media only screen and (max-width: 420px) {
+  .service-down{
+    margin-top: 520px;
+
+    
+    
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .service-down{
+    margin-top: 62px;
+
+    
+    
+  }
+}
