@@ -62,7 +62,7 @@
 @media only screen and (max-width: 420px) {
     .topper2{
         font-weight: 500;
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
 
         
@@ -100,3 +100,24 @@
     
   }
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+  .service-position{
+    padding-right: 37px;
+
+    
+    
+  }
+}
+
+
+
+
+
+
