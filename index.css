@@ -557,6 +557,31 @@ html,body{
 } */
 
 
+
+
+@media only screen and (max-width: 660px) {
+  .sliding111{
+    padding-left: 29px;
+
+   
+  }
+  
+  }
+
+
+  @media only screen and (max-width: 380px) {
+    .sliding111{
+      padding-left: 2px;
+  
+     
+    }
+    
+    }
+  
+
+
+
+
 @media only screen and (max-width: 420px) {
   .hireus{
     /* padding-right: 50px; */
