@@ -1,0 +1,48 @@
+html, body {
+  
+}
+
+* {
+  
+}
+
+body {
+
+ 
+}
+
+.banner {
+
+    background-image:url("services11.png");
+  
+ 
+  
+  height:60%;
+ 
+}
+
+.banner .content {
+ 
+  /** or margin auto if you want to centered the content, margin auto 0 0 0 if you want to align on the bottom...**/
+}
+
+.banner .title {
+  font-weight:600;
+  font-size:4.5em;
+  margin:0 0 5px 0;
+  padding-left: 30px;
+  padding-top: 60px;
+}
+
+.text{
+    font-weight:600;
+  font-size:1em;
+  padding-top: 30px;
+  padding-left: 30px;
+
+    
+}
+
+.banner .title, .banner .text {
+  color:black;
+}

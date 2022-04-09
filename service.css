@@ -121,3 +121,34 @@
 
 
 
+
+
+.hireus{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.ccvv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 780px) {
+  .socialimage{
+    padding-top: 90px;
+    
+  }
+
+
+
+  @media only screen and (max-width: 420px) {
+    .hireus{
+      /* padding-right: 50px; */
+     height: 188px;
+    }
+    
+    

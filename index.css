@@ -470,8 +470,8 @@ html,body{
   margin-top: 40px;
 }
 .owl-dot{
-  height: 15px;
-  width: 45px;
+  height: 5px;
+  width: 5px;
   margin: 0 5px;
   outline: none;
   border-radius: 14px;
@@ -548,13 +548,16 @@ html,body{
 
 
 /* sliding padding */
-/* @media only screen and (min-width: 900px) {
+ @media only screen and (min-width: 900px) {
   .sliding111{
     padding-left: 101px;
 
     
   }
-} */
+} 
+
+
+
 
 
 
@@ -588,6 +591,7 @@ html,body{
    height: 188px;
   }
   
+  
   }
 
 
@@ -616,12 +620,14 @@ html,body{
 
   @media only screen and (max-width: 420px) {
     .ballinmob{
-      /* padding-right: 50px; */
+      
       
 
       
       
     }
+
+
 
     .balls{
       height: 440px;
@@ -794,9 +800,12 @@ servies heading position */
 
 
 
-
-
-
+/* 
+      @media only screen and (min-width: 900px) {
+        
+      
+      
+ 
   
 
     .hireus1{
@@ -832,6 +841,7 @@ servies heading position */
       left: 50%;
       transform: translate(-50%, -50%);
     }
+ }
 
 
 
@@ -840,6 +850,71 @@ servies heading position */
 
 
 
+
+
+    @media only screen and (max-width: 420px) {
+      .hireus3{
+
+       
+        
+        
+      }
+
+
+      .hireus{
+        visibility: hidden;
+        display: none;
+      }
+      .hireus4{
+        
+        
+      }
+
+      .hireus5{
+      
+        
+        
+        
+        
+      }
+
+
+    }
+
+
+
+ */
+
+
+ .hireus{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.ccvv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 420px) {
+  .socialimage{
+    padding-top: 90px;
+
+   
+    
+    
+  }
+
+
+
+
+
+
+}
 
 
 

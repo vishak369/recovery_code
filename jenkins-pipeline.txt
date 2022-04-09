@@ -1,0 +1,193 @@
+DATABASE
+
+pipeline {
+    agent any
+    
+    stages {
+        stage('Hello') {
+            steps {
+                git branch: 'Fibi-QA', credentialsId: 'renjith', url: 'https://github.com/Polus-Software/fibi40-db.git'
+                
+                
+            }
+        }
+        
+        stage('execution'){
+            steps{
+                sh """
+                 sudo ssh root@192.168.1.47 "cd /root/jenkins/db/;rm -rf DB-original" 
+                 scp -r /var/lib/jenkins/workspace/DB-original root@192.168.1.47:/root/jenkins/db/
+                 sudo ssh root@192.168.1.47 "cp /root/jenkins/db/gg.sh /root/jenkins/db/DB-original/;cd /root/jenkins/db/DB-original/; sh gg.sh  &> /root/jenkins/db/lack.log || true"
+                 
+                """
+                
+            }
+        }
+        stage('error checking'){
+            steps{
+                sh """
+                cd /root/demo
+                rm -rf lack.log
+                scp  root@192.168.1.47:/root/jenkins/db/lack.log .
+                if grep -R ERROR lack.log
+                then
+                  echo "error occured"
+                  echo "$BUILD_NUMBER"
+                  cd /var/lib/jenkins/jobs/db-original-test/builds/$BUILD_NUMBER/
+                  mv log log2
+                  cp /root/demo/lack.log log
+                  exit 1
+                  
+                else
+                  cd /var/lib/jenkins/jobs/db-original-test/builds/$BUILD_NUMBER/
+                  mv log log3
+                  echo "Script execution success" > log
+                  
+                fi
+                
+                """
+            }
+            
+        }
+        
+    }
+    
+    post{
+        success{
+             emailext attachLog: true, body: '<p style="color:green;">Script Execution Success</p>', subject: 'Demo Status-Database', to: 'vishak.kv@polussoftware.com'
+        }
+        
+        failure{
+             emailext attachLog: true, body: '<h1 style="color:red;">Script Execution Failed</h1> <h4>Please check the attached log for more details.', subject: 'Demo Status-Database', to: 'vishak.kv@polussoftware.com'
+            
+        }
+    }
+
+}
+
+
+
+
+FRONTEND
+
+pipeline {
+    agent any
+     
+
+    stages {
+        stage('git checkout') {
+            steps {
+                git branch: 'Fibi-QA', credentialsId: 'renjith', url: 'https://github.com/Polus-Software/fibi40-client'
+                
+            }
+        }
+        stage('build') {
+            steps{
+                script{
+                   
+                        sh '''
+                          npm install
+                
+                          npm run-script build
+                
+                        '''
+                }
+                
+            }
+            
+        }
+        stage('Deployment'){
+            steps{
+                sh '''
+                   
+                   sudo ssh root@192.168.1.47 "cd /root/jenkins/frontend/;rm -rf fibi;mv /root/deployment/fibi /root/jenkins/frontend/;"
+                   
+                   sudo scp -r dist root@192.168.1.47:/root/deployment/fibi
+                
+                '''
+            }
+        }
+        
+        
+        
+    }
+    
+    
+     post{
+        success{
+             emailext attachLog: true, body: '<h1 style="color:green;">Build Success</h1>', subject: 'Demo Status-Frontend', to: 'vishak.kv@polussoftware.com,renjith@polussoftware,mahesh.sreenath@polussoftware.com'
+        }
+        
+        failure{
+             emailext attachLog: true, body: '<h1 style="color:red;">Build Failed</h1>,<p>Please check the attached log for more details</p>', subject: 'Demo Status-Frontend', to: 'vishak.kv@polussoftware.com,renjith@polussoftware,mahesh.sreenath@polussoftware.com'
+            
+        }
+    }
+    
+    
+}
+
+
+
+BACKEND
+pipeline {
+    agent any
+     tools { 
+        maven 'Maven2' 
+         
+    }
+
+    stages {
+        stage('git checkout') {
+            steps {
+                git branch: 'Fibi-QA', credentialsId: 'renjith', url: 'https://github.com/Polus-Software/fibi40'
+                
+            }
+        }
+        stage('build mvn') {
+            steps{
+            sh '''
+              mvn eclipse:clean
+              mvn clean
+              mvn eclipse:eclipse
+              mvn compile
+              mvn war:war
+              '''
+                
+            }
+            
+        }
+        
+        stage('Deployment'){
+            steps{
+                sh '''
+                   sudo systemctl stop tomcat
+                   sudo ssh root@192.168.1.47 "cd /root/jenkins/backend/;rm -rf fibi4;rm -rf fibi4.war;mv /root/deployment/fibi4.war /root/jenkins/backend/;mv /root/deployment/fibi4 /root/jenkins/backend/"
+                   sudo scp target/fibi4.war root@192.168.1.47:/root/deployment/
+                   sudo systemctl start tomcat
+                   
+                
+                '''
+            }
+        }
+        
+    }
+    
+    post{
+        success{
+             emailext attachLog: true, body: '<h1 style="color:green;">Build Success</h1>', subject: 'Demo Status-Backend', to: 'vishak.kv@polussoftware.com,renjith@polussoftware,mahesh.sreenath@polussoftware.com'
+        }
+        
+        failure{
+             emailext attachLog: true, body: '<h1 style="color:red;">Build Failed</h1> <p>Please check the attached log for more details.</p>', subject: 'Demo Status-Backend', to: 'vishak.kv@polussoftware.com,renjith@polussoftware,mahesh.sreenath@polussoftware.com'
+            
+        }
+    }
+    
+}
+
+
+
+
+
+BACKEND

@@ -1,0 +1,96 @@
+@media only screen and (max-width: 900px) {
+    .smmimg{
+        width: 100%;
+        height: 350px;
+        filter: brightness(66%);
+
+    }
+  
+      
+      
+    }
+  
+
+    @media only screen and (min-width: 900px) {
+        .smmimg{
+            width: 100%;
+            height: 540px;
+            filter: brightness(60%);
+    
+        }
+      
+          
+          
+        }
+
+
+
+
+        .kk {
+            position: relative;
+            text-align: center;
+            color: white;
+          }
+          
+         
+          
+          /* Top left text */
+          .top-left {
+            position: absolute;
+            top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+          }
+          
+      
+@media only screen and (max-width: 420px) {
+    .hireus{
+      /* padding-right: 50px; */
+     height: 188px;
+    }
+    
+    }
+  
+  
+  
+  
+  
+      .hireus{
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      
+      .ccvv{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      
+      @media only screen and (max-width: 780px) {
+        .socialimage{
+          padding-top: 90px;
+      
+         
+          
+          
+        }
+    }  
+
+
+    
+    
+    .seocontainer {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .seocenter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
