@@ -122,36 +122,32 @@
       <div class="col-md-6 col-md-4 col-md-12 col-sm-12 col-sm-6 col-sm-8 col-xs-12 col-xs-6">
         <h1 style="padding-bottom: 29px;">Contact Us</h1>
 
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-
-        
-
-        
+        <a href="https://m.facebook.com/socialmmarketingagency" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/Socialmonline?t=OLEoC5pN1gXiakFSydVbew&s=09" class="fa fa-twitter"></a>
+        <a href="mailto: socialmmarketingagency@gmail.com" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/company/socialmmarketingagency/" class="fa fa-linkedin"></a>
+        <a href="https://instagram.com/social._.m?utm_medium=copy_link" class="fa fa-instagram"></a>   
 
       </div>
 
       <div style="padding-top: 25px;" class="col-md-6 col-md-4 col-md-12 col-sm-12 col-sm-6 col-sm-8 col-xs-12 col-xs-6">
         <div  class=" contact111 ">
           <h3 style="color: rgb(106, 101, 107);padding-bottom: 15px;">Drop a mail</h3>
-          <form id="goodboy" action="">
-            <label for="fname"> Name</label>
-            <input style="width: 100%;"  type="text" id="fname" name="firstname" required placeholder="Your name..">
+          <form id="submit-form" action="">
+            <label for="Name"> Name</label>
+            <input style="width: 100%;"  type="text" id="Name" name="Firstname" required placeholder="Your name..">
+      
+      
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email" required placeholder="Your Email">
+      
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" name="Subject" required placeholder="subject">
+      
+      
         
-      
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="lastname" required placeholder="Your Email">
-      
-            <label for="lname">Subject</label>
-            <input type="text" id="lname" name="lastname" required placeholder="subject">
-      
-      
-        
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" required placeholder="Write something.." style="height:190px"></textarea>
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" required placeholder="Write something.." style="height:190px"></textarea>
              <input type="submit" value="Submit"> 
         
           </form>
@@ -265,7 +261,7 @@
 
 
 
-<div style="font-family:Montserrat;font-size: 6vw;color: black;font-weight: 900;text-align: center;padding-top: 35px;" class="">Individual <br> Solutions
+<div style="font-family:Montserrat;font-size: 6vw;color: black;font-weight: 900;text-align: center;padding-top: 35px;" class="">Innovative <br> Solutions
 </div>
   
    
@@ -280,19 +276,19 @@
     <div style="padding-top: 30px;" class="col-md-4">
       
       <div style="color: black;" class="">
-        <h3>Gmail1</h3>
+        <h3>Career</h3>
         <h5>socialM</h5>
       </div>
     </div>
     <div style="padding-top: 30px;color: black;" class="col-md-4">
       <div class="">
-        <h3>Gmail2</h3>
+        <h3>Client</h3>
         <h5>socialM</h5>
       </div>
     </div>
     <div style="padding-top: 30px; color: black;" class="col-md-4">
       <div class="">
-        <h3>Gmail3</h3>
+        <h3>Partnership</h3>
         <h5>socialM</h5>
       </div>
     </div>
@@ -328,7 +324,23 @@
 //     $(this).addClass('active');
 //   });
 // });
-
+$("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbweggj7UotXiFgxXZVgxI0YYMHszM6l9lMaQ6rnsrDTtrxbowO5y7trO3rWd-xBik1kZg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Contact form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Error occured, Please contact your developer!")
+    
+                }
+            })
+        })
 
 </script>
 </html>
