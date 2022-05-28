@@ -121,3 +121,42 @@
 
 
 
+
+  
+
+.hireus1{
+  position: relative;
+  text-align: center;
+  color: rgb(75, 73, 73);
+}
+
+
+.hireus2 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hireus3{
+  position: absolute;
+  bottom: 140px;
+  left: 90px;
+}
+
+.hireus4 {
+  position: absolute;
+  bottom: 140px;
+  right: 90px;
+}
+
+
+.hireus5 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+

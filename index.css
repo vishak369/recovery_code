@@ -470,8 +470,8 @@ html,body{
   margin-top: 40px;
 }
 .owl-dot{
-  height: 15px;
-  width: 45px;
+  height: 5px;
+  width: 5px;
   margin: 0 5px;
   outline: none;
   border-radius: 14px;
@@ -616,12 +616,14 @@ html,body{
 
   @media only screen and (max-width: 420px) {
     .ballinmob{
-      /* padding-right: 50px; */
+      
       
 
       
       
     }
+
+
 
     .balls{
       height: 440px;

@@ -1,135 +1,83 @@
-/* .navbar-nav > .active > a {
-    color: aqua;
-    background-color: chartreuse;
-  }
-  .nav-item > a:hover {
-    color: aqua;
-  } */
-
-
-
-
-  .servicepic {
+/* .geton {
     position: relative;
     text-align: center;
-    color: black;
+    color: rgb(19, 18, 18);
   }
-
-
+  
+ 
+  /* Top left text */
   .top-left {
     position: absolute;
-    top: 8px;
-    left: 75px;
+    top: 185px;
+    text-align: left;
+    padding-left: 89px;
+   
   }
 
-  .top-left2 {
-    position: absolute;
-    top: 320px;
-    left: 79px;
-  }
+
+
+
+@media only screen and (max-width: 900px) {
+    .remove1{
+        visibility: hidden;
+        display: none;
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .careertriangle{
+        visibility: hidden;
+        display: none;
+        
+    }
+}
+
+
+
+
+ @media only screen and (min-width: 900px) {
+    .remove2{
+        visibility: hidden;
+        display: none;
+       
+        
+        
+    }
+} 
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+    .top-left2 {
+        position: absolute;
+        top: 490px;
+        left: 99px;
+        text-align: left;
+        font-weight: 820;
+      }
+    
+       
+        
+        
+    }
+
+
+
 
   .top-left3 {
     position: absolute;
-    top: 400px;
+    top: 100px;
     left: 79px;
   }
 
 
 
-  
-  @media only screen and (max-width: 420px) {
-    .topper1{
-      visibility: hidden;
-      display: none;
-      
-      
-    }
-}
-
-
-
-
-
-
-
-
-
-
-  
-@media only screen and (min-width: 900px) {
-    .topper1{
-        font-weight: 700;
-        font-size: 85px;
-        text-align: left;
-        padding-top: 70px;
-      
-      
-    }
-}
-
-
-
-
-
-@media only screen and (max-width: 420px) {
-    .topper2{
-        font-weight: 500;
-        font-size: 30px;
-        text-align: center;
-
-        
-      
-      
-    }
-}
-
-  
-@media only screen and (min-width: 900px) {
-    .topper2{
-        visibility: hidden;
-        display: none;
-      
-    }
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 420px) {
-  .service-position{
-    padding-right: 37px;
-
-    
-    
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Style inputs with type="text", select elements and textareas */
+  /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
@@ -163,26 +111,58 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
- 
-  
-    
-@media only screen and (min-width: 900px) {
-    .contact111{
-        width: 800px;
+
+
+  @media only screen and (max-width: 900px) {
+    .top-left2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px;
         
         
     }
 }
 
 
-@media only screen and (max-width: 420px) {
-    .contact-adjust{
-        padding-top: 560px;
-        
-        
-    }
-}
+
+
+
 
   
+
+.hireus1{
+  position: relative;
+  text-align: center;
+  color: rgb(75, 73, 73);
+}
+
+
+.hireus2 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hireus3{
+  position: absolute;
+  bottom: 140px;
+  left: 90px;
+}
+
+.hireus4 {
+  position: absolute;
+  bottom: 140px;
+  right: 90px;
+}
+
+
+.hireus5 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
