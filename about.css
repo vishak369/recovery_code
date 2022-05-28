@@ -115,13 +115,57 @@ input[type=text], select, textarea {
 
   @media only screen and (max-width: 900px) {
     .top-left2{
-        text-align: center;
+        
         font-weight: 700;
         font-size: 15px;
         
         
     }
 }
+
+
+
+ /*lap */
+ @media only screen and (min-width: 700px) {
+  .dd1{
+    padding-top: 30px;
+
+  }
+  .dd2{
+    padding-top: 30px;
+
+  }
+  .dd3{
+    
+    text-align: center;
+
+  }
+ 
+
+
+ }
+
+ @media only screen and (max-width: 950px) {
+  .dd1{
+    padding-top: 30px;
+
+  }
+  .dd2{
+    padding-top: 30px;
+
+  }
+  .dd3{
+    padding-top: 30px;
+    text-align: center;
+
+  }
+
+
+
+ }
+
+ 
+
 
 
 @media only screen and (max-width: 420px) {
