@@ -139,7 +139,7 @@
       <div   class="col-md-6"> -->
         <div  class=" contact111">
           <h3 style="color: rgb(106, 101, 107);padding-bottom: 15px;">Drop a mail</h3>
-          <form id="goodboy" action="">
+          <form id="submit-form" action="">
             <label for="fname"> Name</label>
             <input type="text" id="fname" name="fname" required placeholder="Your name..">
         
@@ -210,6 +210,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
 
+
+<script>
+  $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbweggj7UotXiFgxXZVgxI0YYMHszM6l9lMaQ6rnsrDTtrxbowO5y7trO3rWd-xBik1kZg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Contact form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Error occured, Please contact the developer!")
+    
+                }
+            })
+        })
+
+</script>
 
 </body>
 </html>
