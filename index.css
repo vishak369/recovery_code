@@ -42,7 +42,7 @@
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 7.5vw;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -51,7 +51,8 @@
 #hero h2 {
   color: black;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 5.7vw;
+  font-weight: 650;
 }
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -80,7 +81,7 @@
     font-size: 22px;
   }
   #hero h1 {
-    font-size: 28px;
+    font-size: 128px;
     line-height: 36px;
   }
   #hero h2 {
@@ -146,7 +147,7 @@
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 98px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
@@ -155,7 +156,7 @@
 #hero h2 {
   color: black;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 25px;
 }
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -184,13 +185,15 @@
     font-size: 22px;
   }
   #hero h1 {
-    font-size: 28px;
+    font-size: 37px;
     line-height: 36px;
+    font-weight: 800;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 35px;
     line-height: 24px;
     margin-bottom: 30px;
+    font-weight: 700;
   }
 }
 @media (max-height: 500px) {
